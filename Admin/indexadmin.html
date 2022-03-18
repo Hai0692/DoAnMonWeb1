@@ -1,0 +1,457 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <title>admin</title>
+    <link href="../Admin\Image/logo1.JPG" rel="icon">
+    <link href="../Admin\Image/logo1.JPG" rel="apple-touch-icon">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Admin\css\styleDemo.css">
+    <link rel="stylesheet" href="../Admin\css/Hieu1.css">
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="lib/gritter/css/jquery.gritter.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+    <script src="lib/chart-master/Chart.js"></script>
+    <style type="text/css">
+        .jqstooltip {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: block;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0, 0, 0, 0.6);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            border: 1px solid white;
+            z-index: 10000;
+        }
+        
+        .jqsfield {
+            color: white;
+            padding: 5px 5px 8px 5px;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <header class="header black-bg">
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+            </div>
+            <a class="navbar-brand " href="#">
+                <img src="../Admin\Image/logo1.JPG" alt="" style="size: 50%;">
+            </a>
+            <div class="nav notify-row" id="top_menu">
+                <ul class="nav top-menu">
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="indexadmin.html#">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge bg-theme">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">Bạn có 5 bình luận</p>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">
+                                    <span class="photo"><img alt="avatar" src="../Admin\Image/Anh10.jpeg"></span>
+                                    <span class="subject">
+                  <span class="from">Trần Tuấn</span>
+                                    <span class="time">Bây giờ</span>
+                                    </span>
+                                    <span class="message">
+                  Cao 1m7 mặc được ko ạ?
+                  </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">
+                                    <span class="photo"><img alt="avatar" src="../Admin\Image/Anh11.jpeg"></span>
+                                    <span class="subject">
+                  <span class="from">Hoàng Nhi</span>
+                                    <span class="time">40 phút trước</span>
+                                    </span>
+                                    <span class="message">
+                  Chất vải tốt không?
+                  </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">
+                                    <span class="photo"><img alt="avatar" src="../Admin\Image/Anh12.jpeg"></span>
+                                    <span class="subject">
+                  <span class="from">Nguyễn Anh</span>
+                                    <span class="time">2 giờ trước</span>
+                                    </span>
+                                    <span class="message">
+                  Set này có hợp không ạ?
+                  </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">
+                                    <span class="photo"><img alt="avatar" src="../Admin\Image/Anh8.jpeg"></span>
+                                    <span class="subject">
+                  <span class="from">Nguyễn Nam</span>
+                                    <span class="time">4 giờ trước/span&gt;
+                  </span>
+                                    <span class="message">
+                  Cái này sao ạ?
+                  </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">Xem tất cả bình luận</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_notification_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="indexadmin.html#">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="badge bg-warning">7</span>
+                        </a>
+                        <ul class="dropdown-menu extended notification">
+                            <div class="notify-arrow notify-arrow-yellow"></div>
+                            <li>
+                                <p class="yellow">Bạn có 7 thông báo mới</p>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">
+                                    <span class="label label-danger"><i class="fa fa-bolt"></i></span> Máy chủ bị quá tải.
+                                    <span class="small italic">4 phút</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">
+                                    <span class="label label-warning"><i class="fa fa-bell"></i></span> Bộ nhớ # 2 Không phản hồi.
+                                    <span class="small italic">30 phút</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">
+                                    <span class="label label-danger"><i class="fa fa-bolt"></i></span> Truy cập đạt 89%.
+                                    <span class="small italic">2 giờ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">
+                                    <span class="label label-success"><i class="fa fa-plus"></i></span> Người dùng mới đã đăng ký.
+                                    <span class="small italic">3 giờ.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexadmin.html#">Xem tất cả thông báo</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-menu pt-3">
+                <ul class="nav pull-right top-menu">
+                    <li><a class="Đăng xuất" href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <div id="sidebar" class="nav-collapse " tabindex="5000" style="overflow: hidden; outline: none;">
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <p class="centered">
+                        <a href="#"><img src="../Admin\Image/Anh9.jpeg" class="img-circle" width="80"></a>
+                    </p>
+                    <h5 class="centered">Hiếu Hoàng</h5>
+                    <li class="mt">
+                        <a class="" href="indexadmin.html">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Doanh thu</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu dcjq-parent-li">
+                        <a href="javascript:;" class="dcjq-parent active">
+                            <i class="fa fa-th"></i>
+                            <span>Thông tin</span>
+                            <span class="dcjq-icon"></span></a>
+                        <ul class="sub" style="display: block;">
+                            <li><a href="khachhang.html">Thông tin khách hàng</a></li>
+                            <li><a href="kho.html">Thông tin kho</a></li>
+                            <li><a href="doitac.html">Thông tin đối tác</a></li>
+                            <li><a href="themsanpham.html">Thêm sản phẩm mới</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu dcjq-parent-li">
+                        <a href="javascript:;" class="dcjq-parent">
+                            <i class="fa fa-comments-o"></i>
+                            <span>Bình luận</span>
+                            <span class="dcjq-icon"></span></a>
+                        <ul class="sub" style="display: none;">
+                            <li><a href="binhluan.html">Bình luận cá nhân</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row">
+                    <div class="col-lg-9 main-chart">
+                        <div class="border-head">
+                            <h3>Lượt xem người dùng</h3>
+                        </div>
+                        <div class="custom-bar-chart">
+                            <ul class="y-axis">
+                                <li><span>10.000</span></li>
+                                <li><span>8.000</span></li>
+                                <li><span>6.000</span></li>
+                                <li><span>4.000</span></li>
+                                <li><span>2.000</span></li>
+                                <li><span>0</span></li>
+                            </ul>
+                            <div class="bar">
+                                <div class="title">Chủ nhật</div>
+                                <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top" style="height: 85%;"></div>
+                            </div>
+                            <div class="bar ">
+                                <div class="title">Hai</div>
+                                <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top" style="height: 50%;"></div>
+                            </div>
+                            <div class="bar ">
+                                <div class="title">Ba</div>
+                                <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top" style="height: 60%;"></div>
+                            </div>
+                            <div class="bar ">
+                                <div class="title">Bốn</div>
+                                <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top" style="height: 45%;"></div>
+                            </div>
+                            <div class="bar">
+                                <div class="title">Năm</div>
+                                <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top" style="height: 32%;"></div>
+                            </div>
+                            <div class="bar ">
+                                <div class="title">Sáu</div>
+                                <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top" style="height: 62%;"></div>
+                            </div>
+                            <div class="bar">
+                                <div class="title">Bảy</div>
+                                <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top" style="height: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="row mt">
+                            <div class="col-md-4 col-sm-4 mb">
+                                <div class="grey-panel pn donut-chart">
+                                    <div class="grey-header">
+                                        <h5>phản hồi từ khách hàng </h5>
+                                    </div>
+                                    <canvas id="serverstatus01" height="150" width="150" style="width: 120px; height: 120px;"></canvas>
+                                    <script>
+                                        var doughnutData = [{
+                                            value: 70,
+                                            color: "#FF6B6B"
+                                        }, {
+                                            value: 30,
+                                            color: "#fdfdfd"
+                                        }];
+                                        var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
+                                    </script>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-xs-6 goleft">
+                                            <p>Phản hồi chat<br>98%</p>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-6">
+                                            <h3>81%</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mb">
+                                <div class="darkblue-panel pn">
+                                    <div class="darkblue-header">
+                                        <h5> lượng truy cập</h5>
+                                    </div>
+                                    <canvas id="serverstatus02" height="150" width="150" style="width: 120px; height: 120px;"></canvas>
+                                    <script>
+                                        var doughnutData = [{
+                                            value: 80,
+                                            color: "#1c9ca7"
+                                        }, {
+                                            value: 20,
+                                            color: "#f68275"
+                                        }];
+                                        var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
+                                    </script>
+                                    <p>3/6/2021</p>
+                                    <footer>
+                                        <div class="pull-left">
+                                            <h5><i class="fa fa-hdd-o"></i> </h5>
+                                        </div>
+                                        <div class="pull-right">
+                                            <h5>80% so với <br> chỉ tiêu</h5>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mb">
+                                <!-- REVENUE PANEL -->
+                                <div class="green-panel pn">
+                                    <div class="green-header">
+                                        <h5>Doanh thu</h5>
+                                    </div>
+                                    <div class="chart mt">
+                                        <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,464,655]"><canvas width="267" height="75" style="display: inline-block; width: 267px; height: 75px; vertical-align: top;"></canvas></div>
+                                    </div>
+                                    <p class="mt"><b>150.730.000</b><br>Thu nhập hàng tháng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ds">
+                        <div class="donut-main">
+                            <h4>Hoàn thành và tiến độ</h4>
+                            <canvas id="newchart" height="162" width="162" style="width: 130px; height: 130px;"></canvas>
+                            <script>
+                                var doughnutData = [{
+                                    value: 70,
+                                    color: "#4ECDC4"
+                                }, {
+                                    value: 30,
+                                    color: "#fdfdfd"
+                                }];
+                                var myDoughnut = new Chart(document.getElementById("newchart").getContext("2d")).Doughnut(doughnutData);
+                            </script>
+                        </div>
+                        <div class="panel terques-chart">
+                            <div class="panel-body">
+                                <div class="chart">
+                                    <div class="centered">
+                                        <span>Doanh thu hôm nay</span>
+                                        <strong>3.590.000 | 30%</strong>
+                                    </div>
+                                    <br>
+                                    <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"><canvas width="238" height="75" style="display: inline-block; width: 238px; height: 75px; vertical-align: top;"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="centered mt">Hoạt động gần đây</h4>
+                        <div class="desc">
+                            <div class="thumb">
+                                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+                            </div>
+                            <div class="details">
+                                <p>
+                                    <muted>Bây giờ</muted>
+                                    <br>
+                                    <a href="#">Thùy Dung</a>đã mua một món hàng.<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="thumb">
+                                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+                            </div>
+                            <div class="details">
+                                <p>
+                                    <muted>2 phút trước</muted>
+                                    <br>
+                                    <a href="#">Khánh Ngân</a>đã yêu thích một món hàng<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="thumb">
+                                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+                            </div>
+                            <div class="details">
+                                <p>
+                                    <muted>3 phút trước</muted>
+                                    <br>
+                                    <a href="#">Anh Vũ</a>đã theo dõi trang<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="lib/jquery.scrollTo.min.js"></script>
+    <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="lib/jquery.sparkline.js"></script>
+    <script src="lib/common-scripts.js"></script>
+    <div id="ascrail2000" class="nicescroll-rails" style="width: 3px; z-index: auto; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; left: 207px; height: 754px; display: none; opacity: 0;">
+        <div style="position: relative; top: 0px; float: right; width: 3px; height: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;"></div>
+    </div>
+    <div id="ascrail2000-hr" class="nicescroll-rails" style="height: 3px; z-index: auto; background: rgb(64, 64, 64); top: 751px; left: 0px; position: fixed; cursor: default; display: none; opacity: 0;">
+        <div style="position: relative; top: 0px; height: 3px; width: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px; left: 0px;"></div>
+    </div>
+    <script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="lib/gritter-conf.js"></script>
+    <!--script for this page-->
+    <script src="lib/sparkline-chart.js"></script>
+    <script src="lib/zabuto_calendar.js"></script>
+    <script type="application/javascript">
+        $(document).ready(function() {
+            $("#date-popover").popover({
+                html: true,
+                trigger: "manual"
+            });
+            $("#date-popover").hide();
+            $("#date-popover").click(function(e) {
+                $(this).hide();
+            });
+
+            $("#my-calendar").zabuto_calendar({
+                action: function() {
+                    return myDateFunction(this.id, false);
+                },
+                action_nav: function() {
+                    return myNavFunction(this.id);
+                },
+                ajax: {
+                    url: "show_data.php?action=1",
+                    modal: true
+                },
+                legend: [{
+                    type: "text",
+                    label: "Special event",
+                    badge: "00"
+                }, {
+                    type: "block",
+                    label: "Regular event",
+                }]
+            });
+        });
+
+        function myNavFunction(id) {
+            $("#date-popover").hide();
+            var nav = $("#" + id).data("navigation");
+            var to = $("#" + id).data("to");
+            console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+        }
+    </script>
+
+
+
+</body>
+
+</html>
